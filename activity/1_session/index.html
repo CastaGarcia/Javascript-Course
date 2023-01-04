@@ -85,18 +85,60 @@
                     <p class="folder">/activity/1_session/index.js</p>
                     <pre>
 <code class="language-javascript">// Ejercicio 1
+    var nombreApellidos = "Elmer Javier Castañeda Garcia";
+    var profesion = "Administracion Militar";
+    var nuevoCargo = "DevOps"
+    var cadenaTemplateLiterals = `Hola, me llamo ${nombreApellidos} y me dedico 
+    a la ${profesion} Estoy cursando este Master porque me gustaria trabajar 
+    en ${nuevoCargo}`
 
-console.log("Ejercicio 1");
+    console.log(cadenaTemplateLiterals)
 
 // Ejercicio 2
-
+    se enjecuta el fichero aboutme, ya que es el ques es encuentra antes del consol.log, 
+    y al debuggearlo estamos ejecutando codigo paso a paso de manera que le estamos dando
+    un estop cada que se encuentra con un breakpoint.
 // Ejercicio 3
-
+    1.- Pestaña networking permite supervisar el trafico de http de la pagina 
+mientras se carga y posteriormente
+    2.- Pestaña console nos ayuda a detectar los errores deontro del codigo 
+de la pagina, mostrandonos los motivos de por que una una etiqueta no se activa
+    3.- Pestaña resources permite inspeccionar los distintos recursos que se han cargado, 
+asi como documentos HTML, archivos Javascript entre otros elementos.
 // Ejercicio 4
-
+    for (let n = 1; n <= 100; n++) {
+        let output = "";
+        if (n % 7 == 0) output += "es divisible por 7"; 
+        console.log(output || n);
+    }
 // Ejercicio 5
+    Diferencia// es que en script se esta importando un fichero, pero en script type=”module” 
+    se estan importando funciones hacia un fichero, en el cual se ejecutara una sola ves,
+    a.- SCRIPT
+        1.- Se ejecutan una sola vez cuando el agente de usuario carga el documento y tambien 
+    son ejecutados cada vez que ocurre un determinado evento
+        2.- El elemento HTML Script, se utiliza para insertar o hacer referencia a un script ejecutable dentro de un 
+        documento HTML o XHTML.
+        3.- Los scripts pueden acompañar a un formulario para procesar los datos a medida que éstos se introducen
+    b.- SCRIPT MODULE
+        1.- los modulos importan y exportan funciones que pueden ser utilizadas en otros achivos o ficheros
+        2.- Un módulo puede contener una clase o una biblioteca de funciones para un propósito específico.
+        3.- los módulos esperan hasta que el documento HTML esté completamente listo (incluso si son pequeños 
+        y cargan más rápido que HTML), y luego lo ejecuta.
+        4.- se mantiene el orden relativo de los scripts: los scripts que van primero en el documento, se ejecutan primero.
+// Ejercicio 6
+function Formatter (formatter,prefix){
+    this.formatter = formatter;
+    this.prefix = prefix;
 
-// Ejercicio 6</code></pre>
+    this.append = function() { 
+    console.log(formatter + " " + prefix)
+    }
+}
+let objetoFormatter = new Formatter("Hello","world");
+
+objetoFormatter.append();
+</code></pre>
 
         </div>
     </div>

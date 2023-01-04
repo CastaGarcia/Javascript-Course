@@ -1,6 +1,6 @@
 // Ejercicio 1
-import {cadenaTemplateLiterals} from "./aboutme.js";
-console.log(cadenaTemplateLiterals);
+import "./aboutme.js";
+console.log("Ejercicio 1");
 
 // Ejercicio 2
 

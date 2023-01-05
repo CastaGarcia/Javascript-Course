@@ -1,6 +1,18 @@
+
+  //  const aboutme=require("./aboutme.js");
+ 
+ 
+ 
+  import { presentacionPersona } from "./aboutme.js";
+   // alert('hola');
+
+
 // Ejercicio 1
-import "./aboutme.js";
-console.log("Ejercicio 1");
+
+
+//console.log(aboutme.objeto.nombre)
+
+
 
 // Ejercicio 2
 
